@@ -9,6 +9,7 @@
     <title>Strona Główna</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
 <link rel="stylesheet" href="Strona-Główna.css" media="screen">
+    <script src="js/script.js"></script> 
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.13.2, nicepage.com">
@@ -20,13 +21,15 @@
 		"@type": "Organization",
 		"name": "",
 		"url": "index.html"
-}</script>
+    
+}
+
+</script>
     <meta property="og:title" content="Strona Główna">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
     <meta property="og:url" content="index.html">
-    <script src="js/script.js"></script>
   </head>
   <body data-home-page="Strona-Główna.html" data-home-page-title="Strona Główna" class="u-body"><header class="u-clearfix u-header u-header" id="sec-64a5"><div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-1">RSS Mail Feed</h2>
@@ -36,6 +39,7 @@
             <button type="button" class="btn btn-primary mr-3" id="save_btn" onclick="saveChanges()">Save</button>
             <button type="button" class="btn btn-primary mr-3" id="preview_btn" onclick="getPreview()">Preview</button>
             <button type="button" class="btn btn-primary mr-3" onclick="sendMail()" id="send_btn">Send</button>
+            <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
       </div></header>
@@ -47,18 +51,29 @@
               <div class="u-container-style u-layout-cell u-size-37 u-layout-cell-1">
                 <div class="u-container-layout u-container-layout-1">
                   <h3 class="u-text u-text-1">Preview</h3>
-                  <div class="u-border-2 u-border-grey-75 u-clearfix u-custom-html u-custom-html-1">
+                  <div class="u-clearfix u-custom-html u-custom-html-1">
                     <div class="col">
                       <div class="border embed-responsive embed-responsive-16by9 rounded-lg">
                         <iframe id="iframe_mail" class="embed-responsive-item" src="about:blank"></iframe>
                       </div>
                     </div>
                   </div>
+                  <div class="u-clearfix u-custom-html u-custom-html-2">
+                    <main class="container-fluid" role="main">
+                      <div class="row">
+                        <div class="col">
+                          <div class="border embed-responsive embed-responsive-16by9 rounded-lg">
+                            <iframe id="iframe_mail" class="embed-responsive-item" src="about:blank"></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </main>
+                  </div>
                 </div>
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-size-23 u-layout-cell-2">
                 <div class="u-container-layout u-container-layout-2">
-                  <div class="u-clearfix u-custom-html u-custom-html-2">
+                  <div class="u-clearfix u-custom-html u-custom-html-3">
                     <main class="container-fluid" role="main">
                       <form>
                         <div class="row">
@@ -79,6 +94,7 @@
                             </div>
                           </div>
                         </div>
+                        <input type="hidden" value="" name="recaptchaResponse">
                       </form>
                       <div class="row">
                         <div class="col">
