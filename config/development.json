@@ -1,0 +1,17 @@
+{
+  "feedmail": {
+    "db": {
+        "url": "mongodb://localhost:27017",
+        "name": "dev",
+        "options": {
+            "useUnifiedTopology": true
+        }
+    },
+
+    "mailgun": {
+      "domain": "awaw",
+      "apiKey": "awaw"
+    },
+    "port": 8080
+  }
+}
